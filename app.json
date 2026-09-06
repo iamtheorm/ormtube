@@ -7,6 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "scheme": "ormtube",
+    "platforms": ["ios", "android"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.iamtheorm.ormtube"
@@ -21,12 +22,21 @@
       },
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
     "plugins": [
       "expo-image",
       "expo-video"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "999af07c-a8a6-4ba6-baa9-62c6dd087d4b"
+      }
+    },
+    "owner": "iamtheorm",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/999af07c-a8a6-4ba6-baa9-62c6dd087d4b"
+    }
   }
 }
